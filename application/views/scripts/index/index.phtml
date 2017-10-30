@@ -1,0 +1,41 @@
+<!Doctype html>
+<!-- Name: Alegra Connect App  -->
+<!-- Copyright: Alegra.com -->
+<!-- Author: Erik de Jesùs Mota Galindo -->
+<!-- Date: 25/10/13 19:11:30 -->
+<!-- Description: Esta es la aplicacion que se conectara con la developer.alegra.com para obtener datos de una
+cuenta de usuario determinada por el usuario sin necesidad de una consulta interna -->
+
+<html>
+    <head>
+        <title>Alegra Connect App</title>
+
+        <!-- Este cargara los estilos que se necesitan en la pagina -->
+
+        <link rel="stylesheet" type="text/css" href="../style/view.css">
+
+        <!-- Este es script(libretillo) permite cargar el Jquery para poder usar este framework de javascript -->
+
+        <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+        <script language="javascript" src="../script/jquery-3.2.1.min.js"></script>
+
+        <!-- Bueno esta es la parte reservada del sistema que hara todo por su parte desde un ajax que
+        no solo hara las llamada de los datos sino que agregara hijos a la pagina -->
+
+        <script language="javascript" src="../script/ajax.js"></script>
+
+        <script language="javascript" src="../script/view.js"></script>
+    </head>
+    <body style="margin:0px;">
+    <div id="main"><div id="logo"></div></div>
+        <!-- Aqui van ha ir todo las alertas tanto de error como de exito -->
+        <div id="msg-box">
+		<div id="alert" style="display:none;"></div>
+	</div>
+         <br>
+        <!-- Uso esta division para insetar todo lo que ajax le va a agragar usandolo como un cuerpo -->
+        <div id="content-document">
+        </div>
+
+    </body>
+</html>
